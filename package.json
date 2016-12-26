@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/wlgmy/huahui#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "vue-server-renderer": "^2.1.7"
   }
 }

@@ -10,7 +10,7 @@
     return new Vue({
       template: '<div id="app">You have been here for {{ counter }} seconds.</div>',
       data: {
-        counter: 10
+        counter: 0
       },
       created: function () {
         var vm = this
