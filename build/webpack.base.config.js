@@ -1,5 +1,6 @@
 const path = require('path')
 const vueConfig = require('./vue-loader.config')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   devtool: '#source-map',

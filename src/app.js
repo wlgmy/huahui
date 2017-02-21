@@ -5,6 +5,10 @@ import router from './router'
 import { sync } from 'vuex-router-sync'
 import * as filters from './filters'
 
+import { Swipe, SwipeItem } from 'mint-ui'
+
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 // sync the router with the vuex store.
 // this registers `store.state.route`
 sync(store, router)

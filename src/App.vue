@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="header">
+    <!-- <div class="header">
       <div class="inner">
         <router-link to="/" exact>
           <img class="logo" src="~public/logo-48.png" alt="logo">
@@ -13,92 +13,131 @@
         <a class="github" href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank">
           Built with Vue.js
         </a>
+      </div>ß
+    </div> -->
+    <div class="header">
+      <div class="view top-header">
+        <div>
+          <img class="logo" src="~public/logo.png"/>
+          <span>新风系统</span>
+        </div>
+        <div>
+          <span><i class="iconfont">&#xe63f;</i>在线购买</span>
+          <span><i class="iconfont">&#xe63b;</i>关注我们</span>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="view navs">
+          <router-link to="/#">首页</router-link>
+          <router-link to="/#">产品中心</router-link>
+          <router-link to="/#">解决方案</router-link>
+          <router-link to="/#">客户案例</router-link>
+          <router-link to="/#">合作共赢</router-link>
+          <router-link to="/#">关于我们</router-link>
+        </div>
       </div>
     </div>
     <transition name="fade" mode="out-in">
-      <router-view class="view"></router-view>
+      <router-view></router-view>
     </transition>
   </div>
 </template>
+<style lang="scss">
+@font-face {
+  font-family: 'iconfont';  /* project id 233894 */
+  src: url('//at.alicdn.com/t/font_tlvgpdp068lx47vi.eot');
+  src: url('//at.alicdn.com/t/font_tlvgpdp068lx47vi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_tlvgpdp068lx47vi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_tlvgpdp068lx47vi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_tlvgpdp068lx47vi.svg#iconfont') format('svg');
+}
 
-<style lang="stylus">
-body
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size 15px
-  background-color lighten(#eceef1, 30%)
-  margin 0
-  padding-top 55px
-  color #34495e
-  overflow-y scroll
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-a
-  color #34495e
-  text-decoration none
+.flex{
+  display: flex;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-column{
+  flex-direction: column;
+}
 
-.header
-  background-color #ff6600
-  position fixed
-  z-index 999
-  height 55px
-  top 0
-  left 0
-  right 0
-  .inner
-    max-width 800px
-    box-sizing border-box
-    margin 0px auto
-    padding 15px 5px
-  a
-    color rgba(255, 255, 255, .8)
-    line-height 24px
-    transition color .15s ease
-    display inline-block
-    vertical-align middle
-    font-weight 300
-    letter-spacing .075em
-    margin-right 1.8em
-    &:hover
-      color #fff
-    &.router-link-active
-      color #fff
-      font-weight 400
-    &:nth-child(6)
-      margin-right 0
-  .github
-    color #fff
-    font-size .9em
-    margin 0
-    float right
-
-.logo
-  width 24px
-  margin-right 10px
-  display inline-block
-  vertical-align middle
-
-.view
-  max-width 800px
-  margin 0 auto
-  position relative
-
-.fade-enter-active, .fade-leave-active
-  transition all .2s ease
-
-.fade-enter, .fade-leave-active
-  opacity 0
-
-@media (max-width 860px)
-  .header .inner
-    padding 15px 30px
-
-@media (max-width 600px)
-  body
-    font-size 14px
-  .header
-    .inner
-      padding 15px
-    a
-      margin-right 1em
-    .github
-      display none
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    background-color: #FFF;
+    margin: 0;
+    overflow-y: scroll;
+  }
+  .view{
+    max-width: 1120px;
+    text-decoration: none;
+    position: relative;
+    margin: 0 auto;
+  }
+  .fade-enter-active, .fade-leave-active{
+    transition: all .2s ease;
+  }
+  .fade-enter, .fade-leave-active{
+    opacity: 0;
+  }
+  .header{
+    width: 100%;
+    height: 120px;
+    .top-header{
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+      background-color: #FFF;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+        width: 82px;
+        height: 60px;
+        float: left;
+      }
+      span{
+        font-szie: 20px;
+        color: #676767;
+        margin-left: 20px;
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        float: left;
+        i{
+          margin-right: 10px;
+        }
+      }
+      span:hover{
+        color: #17d676;
+      }
+    }
+    .nav{
+      width: 100%;
+      height: 60px;
+      background: url('~public/footerbar.png') repeat;
+      .navs{
+        display: flex;
+        flex-direction: row;
+        a{
+          flex: 1;
+          text-decoration: none;
+          color: #FFF;
+          display: block;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+        }
+      }
+    }
+  }
 </style>

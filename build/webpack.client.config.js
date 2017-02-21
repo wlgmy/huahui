@@ -34,12 +34,12 @@ if (process.env.NODE_ENV === 'production') {
   // vueConfig is already included in the config via LoaderOptionsPlugin
   // here we overwrite the loader config for <style lang="stylus">
   // so they are extracted.
-  vueConfig.loaders = {
-    stylus: ExtractTextPlugin.extract({
-      loader: 'css-loader!stylus-loader',
-      fallbackLoader: 'vue-style-loader' // <- this is a dep of vue-loader
-    })
-  }
+  // vueConfig.loaders = {
+  //   stylus: ExtractTextPlugin.extract({
+  //     loader: 'css-loader!stylus-loader',
+  //     fallbackLoader: 'vue-style-loader' // <- this is a dep of vue-loader
+  //   })
+  // }
 
   config.plugins.push(
     new ExtractTextPlugin('styles.[hash].css'),
