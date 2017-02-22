@@ -21,8 +21,40 @@
         多年致力于研发创新，我们精心打造了更专业的新风系统，华汇嘉犀利产品已获得国家权威认证，<br />
         并获得多项国家专利。
       </p>
-      <div class="block1">
-
+      <div class="pro-list flex flex-row">
+        <div class="pro-item flex flex-column">
+          <img src="~public/pro1.png" />
+          <div>
+            <p class="pro-name">
+              壁挂式新风机
+            </p>
+            <p class="pro-desc">
+              大气美观，安装便捷，满足大部分家居需求
+            </p>
+          </div>
+        </div>
+        <div class="pro-item flex flex-column">
+          <img src="~public/pro1.png" />
+          <div>
+            <p class="pro-name">
+              吊顶式新风机
+            </p>
+            <p class="pro-desc">
+              集成吊顶式安装，统一中控系统
+            </p>
+          </div>
+        </div>
+        <div class="pro-item flex flex-column">
+          <img src="~public/pro1.png" />
+          <div>
+            <p class="pro-name">
+              柜式新风机
+            </p>
+            <p class="pro-desc">
+              适用商用、办公等场所，无需大规模施工
+            </p>
+          </div>
+        </div>
       </div>
       <p class="bigP">
         看起来<span class="point">简单</span>，但是更懂您的产品
@@ -48,8 +80,31 @@
       <p>
         好新风不只是产品，而是为您打造一个真正有效的室内净化方案
       </p>
-      <div class="block1">
-
+      <div class="sol-list flex flex-row">
+        <div class="sol-item flex flex-column">
+          <img src="~public/sol1.png"/>
+          <p>
+              免费上门测量
+          </p>
+        </div>
+        <div class="sol-item flex flex-column">
+          <img src="~public/sol2.png"/>
+          <p>
+              与客户确认定制方案
+          </p>
+        </div>
+        <div class="sol-item flex flex-column">
+          <img src="~public/sol3.png"/>
+          <p>
+              上门安装并调试
+          </p>
+        </div>
+        <div class="sol-item flex flex-column">
+          <img src="~public/sol4.png"/>
+          <p>
+              专属售后全程维护
+          </p>
+        </div>
       </div>
       <p class="bigP">
         用专注铸就<span class="point">品牌，创新</span>成就未来
@@ -58,10 +113,9 @@
         自2004年成立以来，我们用技术创新与专业服务，铸就了一个让用户信赖的品牌，而美好的明天，<br />
         我们期待更多志同道合的朋友！
       </p>
-      <div class="block1">
-
-      </div>
+      <img class="cooperate" src="~public/cooperate.png" />
     </div>
+    <img class="phone" src="~public/phone-box.png"/>
   </div>
 </template>
 
@@ -133,11 +187,10 @@ export default {
     }
     .home-content{
       align-items: center;
+      margin-bottom: 30px;
       p{
         font-size: 14px;
         color: #676767;
-        height: 150%;
-        line-height: 21px;
         margin: 0;
         margin-top: 30px;
         text-align: center;
@@ -147,18 +200,76 @@ export default {
       }
       .bigP{
         font-size: 20px;
-        height: 30px;
+        line-height: 30px;
+        height: 150%;
         .point{
           font-size: 24px;
         }
       }
       .block1{
-        width: 1122px;
+        width: 100%;
         height: 350px;
         display: block;
         background-color: #c1c1c1;
         margin-top: 18px;
       }
+      .pro-list{
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        .pro-item{
+          width: 350px;
+          max-width: 33%;
+          img{
+            width: 100%;
+          }
+          div{
+            height: 80px;
+            background: #b1b1b1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+              color: #FFF;
+              font-size: 14px;
+              text-align: center;
+              margin: 0;
+            }
+            .pro-name{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .sol-list{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+        .sol-item{
+          max-width: 25%;
+          border: 1px solid #dedede;
+          img{
+            width: 100%;
+          }
+          p{
+            color: #676767;
+            text-align: center;
+            height: 48px;
+            font-size: 14px;
+            line-height: 48px;
+            margin: 0;
+          }
+        }
+      }
+      .cooperate{
+        margin-top: 20px;
+        width: 100%;
+      }
     }
+  }
+  .phone{
+    position: fixed;
+    top:40%;
+    right: 5%;
   }
 </style>
