@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="home">
-    <div class="banner">
+    <div class="banner" :style="{height: bannerHeight + 'px'}">
       <mt-swipe :auto="4000" class="swip-banner">
         <mt-swipe-item >
           <img src="~public/home-banner1.png" alt="" />
@@ -115,13 +115,19 @@
       </p>
       <img class="cooperate" src="~public/cooperate.png" />
     </div>
-    <img class="phone" src="~public/phone-box.png"/>
   </div>
 </template>
 
 <script>
 export default {
-
+  data(){
+    return {
+      bannerHeight: 300
+    }
+  },
+  mounted() {
+    this.bannerHeight = window.innerWidth * 650 / 1920
+  }
 }
 </script>
 
@@ -172,7 +178,6 @@ export default {
     width: 100%;
     .banner{
       width: 100%;
-      height: 300px;
       .swip-banner{
         text-align: center;
         overflow: hidden;
@@ -180,7 +185,7 @@ export default {
       }
       img{
         width: 100%;
-        height: 300px;
+        height: 100%;
         vertical-align:top;
         display: block;
       }
@@ -233,6 +238,7 @@ export default {
               font-size: 14px;
               text-align: center;
               margin: 0;
+              margin-top: 7px;
             }
             .pro-name{
               font-size: 16px;
@@ -268,9 +274,5 @@ export default {
       }
     }
   }
-  .phone{
-    position: fixed;
-    top:40%;
-    right: 1%;
-  }
+
 </style>

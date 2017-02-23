@@ -45,12 +45,12 @@
       </div>
       <div class="nav">
         <div class="view navs">
-          <router-link to="/#">首页</router-link>
-          <router-link to="/#">产品中心</router-link>
-          <router-link to="/#">解决方案</router-link>
-          <router-link to="/#">客户案例</router-link>
-          <router-link to="/#">合作共赢</router-link>
-          <router-link to="/#">关于我们</router-link>
+          <router-link to="/#" :class="currentRouter === 'home' ? 'current' : ''">首页</router-link>
+          <router-link to="/#" :class="currentRouter === 'product' ? 'current' : ''">产品中心</router-link>
+          <router-link to="/#" :class="currentRouter === 'project' ? 'current' : ''">解决方案</router-link>
+          <router-link to="/caselist" :class="currentRouter === 'case' ? 'current' : ''">客户案例</router-link>
+          <router-link to="/#" :class="currentRouter === 'cooperation' ? 'current' : ''">合作共赢</router-link>
+          <router-link to="/#" :class="currentRouter === 'aboutus' ? 'current' : ''">关于我们</router-link>
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@
           <router-link to="/#">网站首页</router-link>
           <router-link to="/#">产品中心</router-link>
           <router-link to="/#">解决方案</router-link>
-          <router-link to="/#">客户案例</router-link>
+          <router-link to="/caselist">客户案例</router-link>
           <router-link to="/#">合作共赢</router-link>
           <router-link to="/#">关于我们</router-link>
         </div>
@@ -86,19 +86,31 @@
         <i class="iconfont right">&#xe65d;</i>
       </div>
     </div>
+    <img class="phone" src="~public/phone-box.png"/>
   </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      showAtt: false
+      showAtt: false,
+      currentRouter: 'home'
     }
   },
   methods: {
     showOrHideAtt() {
       this.showAtt = !this.showAtt
+    },
+    changeRouter(){
+      console.log('routechange',this.$route)
+      this.currentRouter = this.$route.name || 'home'
     }
+  },
+  watch: {
+    '$route':'changeRouter'
+  },
+  mounted(){
+    this.currentRouter = this.$route.name || 'home'
   }
 }
 </script>
@@ -177,7 +189,7 @@ export default {
         float: left;
       }
       span{
-        font-szie: 20px;
+        font-size: 20px;
         color: #676767;
         margin-left: 20px;
         display: block;
@@ -209,7 +221,10 @@ export default {
         line-height: 60px;
         text-align: center;
       }
-
+      .current{
+        color: #676767;
+        border-bottom: 2px solid #676767;
+      }
     }
   }
   .footer{
@@ -252,5 +267,12 @@ export default {
       font-weight:900;
       color: #FFF;
     }
+  }
+  .phone{
+    position: fixed;
+    top:40%;
+    right: 1%;
+    width: 160px;
+    z-index: 999;
   }
 </style>
