@@ -246,7 +246,7 @@ export default {
         justify-content: space-between;
         margin-top: 20px;
         .sol-item{
-          max-width: 25%;
+          max-width: 24%;
           border: 1px solid #dedede;
           img{
             width: 100%;
@@ -270,6 +270,6 @@ export default {
   .phone{
     position: fixed;
     top:40%;
-    right: 5%;
+    right: 1%;
   }
 </style>

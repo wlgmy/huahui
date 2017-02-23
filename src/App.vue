@@ -139,7 +139,7 @@ export default {
     overflow-y: scroll;
   }
   .view{
-    max-width: 90%;
+    max-width: 800px;
     text-decoration: none;
     position: relative;
     margin: 0 auto;
