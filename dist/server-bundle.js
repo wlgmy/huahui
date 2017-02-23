@@ -980,7 +980,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, "\n.mint-swipe {\n  overflow: hidden;\n  position: relative;\n  height: 100%;\n}\n.mint-swipe-items-wrap {\n  position: relative;\n  overflow: hidden;\n  height: 100%;\n}\n.mint-swipe-items-wrap > div {\n  position: absolute;\n  -ms-transform: translateX(-100%);\n      transform: translateX(-100%);\n  width: 100%;\n  height: 100%;\n  display: none;\n}\n.mint-swipe-items-wrap > div.is-active {\n  display: block;\n  -ms-transform: none;\n      transform: none;\n}\n.mint-swipe-indicators {\n  position: absolute;\n  bottom: 10px;\n  left: 50%;\n  -ms-transform: translateX(-50%);\n      transform: translateX(-50%);\n}\n.mint-swipe-indicator {\n  width: 8px;\n  height: 8px;\n  display: inline-block;\n  background: #000;\n  opacity: 0.2;\n  margin: 0 3px;\n}\n.mint-swipe-indicator.is-active {\n  background: #17d676;\n}\n.home {\n  width: 100%;\n}\n.home .banner {\n    width: 100%;\n    height: 300px;\n}\n.home .banner .swip-banner {\n      text-align: center;\n      overflow: hidden;\n      position: relative;\n}\n.home .banner img {\n      width: 100%;\n      height: 300px;\n      vertical-align: top;\n      display: block;\n}\n.home .home-content {\n    -ms-flex-align: center;\n        align-items: center;\n    margin-bottom: 30px;\n}\n.home .home-content p {\n      font-size: 14px;\n      color: #676767;\n      margin: 0;\n      margin-top: 30px;\n      text-align: center;\n}\n.home .home-content p + p {\n      margin-top: 18px;\n}\n.home .home-content .bigP {\n      font-size: 20px;\n      line-height: 30px;\n      height: 150%;\n}\n.home .home-content .bigP .point {\n        font-size: 24px;\n}\n.home .home-content .block1 {\n      width: 100%;\n      height: 350px;\n      display: block;\n      background-color: #c1c1c1;\n      margin-top: 18px;\n}\n.home .home-content .pro-list {\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n      width: 100%;\n      margin-top: 20px;\n}\n.home .home-content .pro-list .pro-item {\n        width: 350px;\n        max-width: 33%;\n}\n.home .home-content .pro-list .pro-item img {\n          width: 100%;\n}\n.home .home-content .pro-list .pro-item div {\n          height: 80px;\n          background: #b1b1b1;\n          display: -ms-flexbox;\n          display: flex;\n          -ms-flex-direction: column;\n              flex-direction: column;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n.home .home-content .pro-list .pro-item div p {\n            color: #FFF;\n            font-size: 14px;\n            text-align: center;\n            margin: 0;\n}\n.home .home-content .pro-list .pro-item div .pro-name {\n            font-size: 16px;\n}\n.home .home-content .sol-list {\n      width: 100%;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n      margin-top: 20px;\n}\n.home .home-content .sol-list .sol-item {\n        max-width: 24%;\n        border: 1px solid #dedede;\n}\n.home .home-content .sol-list .sol-item img {\n          width: 100%;\n}\n.home .home-content .sol-list .sol-item p {\n          color: #676767;\n          text-align: center;\n          height: 48px;\n          font-size: 14px;\n          line-height: 48px;\n          margin: 0;\n}\n.home .home-content .cooperate {\n      margin-top: 20px;\n      width: 100%;\n}\n.phone {\n  position: fixed;\n  top: 40%;\n  right: 1%;\n}\n", ""]);
+exports.push([module.i, "\n.mint-swipe {\n  overflow: hidden;\n  position: relative;\n  height: 100%;\n}\n.mint-swipe-items-wrap {\n  position: relative;\n  overflow: hidden;\n  height: 100%;\n}\n.mint-swipe-items-wrap > div {\n  position: absolute;\n  -ms-transform: translateX(-100%);\n      transform: translateX(-100%);\n  width: 100%;\n  height: 100%;\n  display: none;\n}\n.mint-swipe-items-wrap > div.is-active {\n  display: block;\n  -ms-transform: none;\n      transform: none;\n}\n.mint-swipe-indicators {\n  position: absolute;\n  bottom: 10px;\n  left: 50%;\n  -ms-transform: translateX(-50%);\n      transform: translateX(-50%);\n}\n.mint-swipe-indicator {\n  width: 8px;\n  height: 8px;\n  display: inline-block;\n  background: #000;\n  opacity: 0.2;\n  margin: 0 3px;\n}\n.mint-swipe-indicator.is-active {\n  background: #17d676;\n}\n.home {\n  width: 100%;\n}\n.home .banner {\n    width: 100%;\n    height: 300px;\n}\n.home .banner .swip-banner {\n      text-align: center;\n      overflow: hidden;\n      position: relative;\n}\n.home .banner img {\n      width: 100%;\n      height: 300px;\n      vertical-align: top;\n      display: block;\n}\n.home .home-content {\n    -ms-flex-align: center;\n        align-items: center;\n    margin-bottom: 30px;\n}\n.home .home-content p {\n      font-size: 14px;\n      color: #676767;\n      margin: 0;\n      margin-top: 30px;\n      text-align: center;\n}\n.home .home-content p + p {\n      margin-top: 18px;\n}\n.home .home-content .bigP {\n      font-size: 20px;\n      line-height: 30px;\n}\n.home .home-content .bigP .point {\n        font-size: 24px;\n}\n.home .home-content .block1 {\n      width: 100%;\n      height: 350px;\n      display: block;\n      background-color: #c1c1c1;\n      margin-top: 18px;\n}\n.home .home-content .pro-list {\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n      width: 100%;\n      margin-top: 20px;\n}\n.home .home-content .pro-list .pro-item {\n        width: 350px;\n        max-width: 33%;\n}\n.home .home-content .pro-list .pro-item img {\n          width: 100%;\n}\n.home .home-content .pro-list .pro-item div {\n          height: 80px;\n          background: #b1b1b1;\n          display: -ms-flexbox;\n          display: flex;\n          -ms-flex-direction: column;\n              flex-direction: column;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n.home .home-content .pro-list .pro-item div p {\n            color: #FFF;\n            font-size: 14px;\n            text-align: center;\n            margin: 0;\n}\n.home .home-content .pro-list .pro-item div .pro-name {\n            font-size: 16px;\n}\n.home .home-content .sol-list {\n      width: 100%;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n      margin-top: 20px;\n}\n.home .home-content .sol-list .sol1-item {\n        max-width: 24%;\n        border: 1px solid #dedede;\n}\n.home .home-content .sol-list .sol1-item img {\n          width: 100%;\n}\n.home .home-content .sol-list .sol1-item span {\n          color: #676767;\n          text-align: center;\n          height: 48px;\n          font-size: 14px;\n          line-height: 48px;\n          margin: 0;\n          width: 100%;\n          display: block;\n}\n.home .home-content .cooperate {\n      margin-top: 20px;\n      width: 100%;\n}\n.phone {\n  position: fixed;\n  top: 40%;\n  right: 1%;\n}\n", ""]);
 
 // exports
 
@@ -11595,30 +11595,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("定制")]), _vm._v("专属您的新风系统\n    ")]), _c('p', [_vm._v("\n      好新风不只是产品，而是为您打造一个真正有效的室内净化方案\n    ")]), _c('div', {
     staticClass: "sol-list flex flex-row"
   }, [_c('div', {
-    staticClass: "sol-item flex flex-column"
+    staticClass: "sol1-item "
   }, [_c('img', {
     attrs: {
       "src": __webpack_require__(24)
     }
-  }), _c('p', [_vm._v("\n            免费上门测量\n        ")])]), _c('div', {
-    staticClass: "sol-item flex flex-column"
+  }), _c('span', [_vm._v("\n            免费上门测量\n        ")])]), _c('div', {
+    staticClass: "sol1-item "
   }, [_c('img', {
     attrs: {
       "src": __webpack_require__(25)
     }
-  }), _c('p', [_vm._v("\n            与客户确认定制方案\n        ")])]), _c('div', {
-    staticClass: "sol-item flex flex-column"
+  }), _c('span', [_vm._v("\n            与客户确认定制方案\n        ")])]), _c('div', {
+    staticClass: "sol1-item "
   }, [_c('img', {
     attrs: {
       "src": __webpack_require__(26)
     }
-  }), _c('p', [_vm._v("\n            上门安装并调试\n        ")])]), _c('div', {
-    staticClass: "sol-item flex flex-column"
+  }), _c('span', [_vm._v("\n            上门安装并调试\n        ")])]), _c('div', {
+    staticClass: "sol1-item "
   }, [_c('img', {
     attrs: {
       "src": __webpack_require__(27)
     }
-  }), _c('p', [_vm._v("\n            专属售后全程维护\n        ")])])]), _c('p', {
+  }), _c('span', [_vm._v("\n            专属售后全程维护\n        ")])])]), _c('p', {
     staticClass: "bigP"
   }, [_vm._v("\n      用专注铸就"), _c('span', {
     staticClass: "point"

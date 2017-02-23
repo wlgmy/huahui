@@ -81,29 +81,29 @@
         好新风不只是产品，而是为您打造一个真正有效的室内净化方案
       </p>
       <div class="sol-list flex flex-row">
-        <div class="sol-item flex flex-column">
+        <div class="sol1-item ">
           <img src="~public/sol1.png"/>
-          <p>
+          <span>
               免费上门测量
-          </p>
+          </span>
         </div>
-        <div class="sol-item flex flex-column">
+        <div class="sol1-item ">
           <img src="~public/sol2.png"/>
-          <p>
+          <span>
               与客户确认定制方案
-          </p>
+          </span>
         </div>
-        <div class="sol-item flex flex-column">
+        <div class="sol1-item ">
           <img src="~public/sol3.png"/>
-          <p>
+          <span>
               上门安装并调试
-          </p>
+          </span>
         </div>
-        <div class="sol-item flex flex-column">
+        <div class="sol1-item ">
           <img src="~public/sol4.png"/>
-          <p>
+          <span>
               专属售后全程维护
-          </p>
+          </span>
         </div>
       </div>
       <p class="bigP">
@@ -201,7 +201,6 @@ export default {
       .bigP{
         font-size: 20px;
         line-height: 30px;
-        height: 150%;
         .point{
           font-size: 24px;
         }
@@ -245,19 +244,21 @@ export default {
         width: 100%;
         justify-content: space-between;
         margin-top: 20px;
-        .sol-item{
+        .sol1-item{
           max-width: 24%;
           border: 1px solid #dedede;
           img{
             width: 100%;
           }
-          p{
+          span{
             color: #676767;
             text-align: center;
             height: 48px;
             font-size: 14px;
             line-height: 48px;
             margin: 0;
+            width: 100%;
+            display: block;
           }
         }
       }
