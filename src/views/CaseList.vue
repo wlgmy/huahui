@@ -133,4 +133,15 @@ export default {
     }
   }
 }
+  @media screen and (max-width: 750px){
+    .case-list{
+      .view{
+        .list{
+          .item{
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
 </style>

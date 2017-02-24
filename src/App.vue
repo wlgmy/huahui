@@ -175,11 +175,9 @@ export default {
   }
   .header{
     width: 100%;
-    height: 120px;
     .top-header{
       display: flex;
       flex-direction: row;
-      height: 60px;
       background-color: #FFF;
       justify-content: space-between;
       align-items: center;
@@ -274,5 +272,22 @@ export default {
     right: 1%;
     width: 160px;
     z-index: 999;
+  }
+  @media screen and (max-width: 750px) {
+    .top-header{
+      flex-direction: column !important;
+      div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    .phone{
+      display: none;
+    }
+  }
+  .view{
+    width: 96%;
+    margin: 0 auto;
   }
 </style>
