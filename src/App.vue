@@ -102,7 +102,6 @@ export default {
       this.showAtt = !this.showAtt
     },
     changeRouter(){
-      console.log('routechange',this.$route)
       this.currentRouter = this.$route.name || 'home'
     }
   },

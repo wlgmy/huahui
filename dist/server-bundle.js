@@ -511,7 +511,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.showAtt = !this.showAtt
     },
     changeRouter: function changeRouter(){
-      console.log('routechange',this.$route)
       this.currentRouter = this.$route.name || 'home'
     }
   },
