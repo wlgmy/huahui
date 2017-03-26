@@ -46,7 +46,7 @@
       <div class="nav">
         <div class="view navs">
           <router-link to="/#" :class="currentRouter === 'home' ? 'current' : ''">首页</router-link>
-          <router-link to="/#" :class="currentRouter === 'product' ? 'current' : ''">产品中心</router-link>
+          <router-link to="/product" :class="currentRouter === 'product' ? 'current' : ''">产品中心</router-link>
           <router-link to="/#" :class="currentRouter === 'project' ? 'current' : ''">解决方案</router-link>
           <router-link to="/caselist" :class="currentRouter === 'case' ? 'current' : ''">客户案例</router-link>
           <router-link to="/#" :class="currentRouter === 'cooperation' ? 'current' : ''">合作共赢</router-link>
