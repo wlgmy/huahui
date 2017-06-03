@@ -25,6 +25,6 @@ export default new Router({
       { path: '', component: HomeView, name: 'home' },
       { path: '/home', component: HomeView, name: 'home' },
       { path: '/caselist', component: CaseListView, name: 'case'},
-      {path: '/product', component: Product, name: 'product'}
+      { path: '/product', component: Product, name: 'product'}
   ]
 })
