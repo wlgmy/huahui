@@ -9,6 +9,7 @@ Vue.use(Router)
 import HomeView from '../views/Home.vue'
 import CaseListView from '../views/CaseList.vue'
 import Product from '../views/Product.vue'
+import Aboutus from '../views/Aboutus.vue'
 
 export default new Router({
   mode: 'history',
@@ -25,6 +26,7 @@ export default new Router({
       { path: '', component: HomeView, name: 'home' },
       { path: '/home', component: HomeView, name: 'home' },
       { path: '/caselist', component: CaseListView, name: 'case'},
-      {path: '/product', component: Product, name: 'product'}
+      { path: '/product', component: Product, name: 'product'},
+      { path: '/aboutus', component: Aboutus, name: 'aboutus'}
   ]
 })
