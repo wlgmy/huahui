@@ -50,7 +50,7 @@
           <router-link to="/#" :class="currentRouter === 'project' ? 'current' : ''">解决方案</router-link>
           <router-link to="/caselist" :class="currentRouter === 'case' ? 'current' : ''">客户案例</router-link>
           <router-link to="/#" :class="currentRouter === 'cooperation' ? 'current' : ''">合作共赢</router-link>
-          <router-link to="/#" :class="currentRouter === 'aboutus' ? 'current' : ''">关于我们</router-link>
+          <router-link to="/aboutus" :class="currentRouter === 'aboutus' ? 'current' : ''">关于我们</router-link>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
           <router-link to="/#">解决方案</router-link>
           <router-link to="/caselist">客户案例</router-link>
           <router-link to="/#">合作共赢</router-link>
-          <router-link to="/#">关于我们</router-link>
+          <router-link to="/aboutus">关于我们</router-link>
         </div>
       </div>
       <div class="footer-content flex flex-row view">
