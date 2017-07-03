@@ -5,7 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
   devtool: '#source-map',
   entry: {
-    app: './src/client-entr.js',
+    app: './src/client-entry.js',
     vendor: [
       'es6-promise',
       'firebase/app',
