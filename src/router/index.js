@@ -10,6 +10,8 @@ import HomeView from '../views/Home.vue'
 import CaseListView from '../views/CaseList.vue'
 import Product from '../views/Product.vue'
 import Aboutus from '../views/Aboutus.vue'
+import Cooperation from '../views/Cooperation.vue'
+import Solution from '../views/Solution.vue'
 
 export default new Router({
   mode: 'history',
@@ -25,8 +27,10 @@ export default new Router({
     // { path: '/', redirect: '/top' },
       { path: '', component: HomeView, name: 'home' },
       { path: '/home', component: HomeView, name: 'home' },
-      { path: '/caselist', component: CaseListView, name: 'case'},
-      { path: '/product', component: Product, name: 'product'},
-      { path: '/aboutus', component: Aboutus, name: 'aboutus'}
+      { path: '/caselist', component: CaseListView, name: 'case' },
+      { path: '/product', component: Product, name: 'product' },
+      { path: '/aboutus', component: Aboutus, name: 'aboutus' },
+      { path: '/cooperation', component: Cooperation, name: 'cooperation' },
+      { path: '/solution', component: Solution, name: 'solution' }
   ]
 })

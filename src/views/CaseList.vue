@@ -1,4 +1,4 @@
-<template lang="html">
+#<template lang="html">
   <div class="case-list">
     <img class="banner-img" src="~public/casebanner.png"/>
     <div class="view">
@@ -6,7 +6,7 @@
         客户经典案例
       </p>
       <div class="list flex flex-row">
-          <router-link to="/case/1" class="item">
+          <router-link to="#" class="item">
           <img src="~public/casepic1.png"/>
           <div class="case-desc flex">
             <span>
@@ -15,7 +15,7 @@
           </div>
 
         </router-link >
-        <router-link to="/case/1" class="item">
+        <router-link to="#" class="item">
         <img src="~public/casepic2.png"/>
         <div class="case-desc flex">
           <span>
@@ -24,7 +24,7 @@
         </div>
 
       </router-link >
-      <router-link to="/case/1" class="item">
+      <router-link to="#" class="item">
       <img src="~public/casepic3.png"/>
       <div class="case-desc flex">
         <span>
@@ -33,7 +33,7 @@
       </div>
 
     </router-link >
-    <router-link to="/case/1" class="item">
+    <router-link to="#" class="item">
     <img src="~public/casepic1.png"/>
     <div class="case-desc flex">
       <span>
@@ -42,7 +42,7 @@
     </div>
 
   </router-link >
-  <router-link to="/case/1" class="item">
+  <router-link to="#" class="item">
   <img src="~public/casepic2.png"/>
   <div class="case-desc flex">
     <span>
@@ -51,7 +51,7 @@
   </div>
 
 </router-link >
-<router-link to="/case/1" class="item">
+<router-link to="#" class="item">
 <img src="~public/casepic3.png"/>
 <div class="case-desc flex">
   <span>
